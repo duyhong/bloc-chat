@@ -1,1 +1,6 @@
-<h1>Home Page</h1>
+<nav class="navbar">
+    <h1>Bloc Chat</h1>
+    <div ng-repeat = "room in home.rooms track by $index">
+        {{room.$value}}
+    </div> 
+</nav>
