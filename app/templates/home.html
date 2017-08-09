@@ -1,5 +1,6 @@
 <nav class="navbar">
     <h1>Bloc Chat</h1>
+    <button class="new-room-button" ng-click="open()">New room</button>
     <div ng-repeat = "room in home.rooms track by $index">
         {{room.$value}}
     </div> 

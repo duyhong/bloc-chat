@@ -4,10 +4,19 @@
     left: 0;
     top: 0;
     padding-left: 1rem;
-    width: 200px;  
+    width: 210px;  
     height: 100%;
 }
 
 div {
     padding-bottom: 0.5rem;
+}
+
+h1 {
+    display: inline-block;
+}
+
+button {
+    margin: 0px 10px 10px 10px;
+    height: 30px;
 }
