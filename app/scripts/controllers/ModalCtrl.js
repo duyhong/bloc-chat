@@ -6,8 +6,8 @@
             this.roomName = '';
             
             this.ok = function() {
-                Room.add($scope.roomName);
-                alert($scope.roomName + ' is created');
+                Room.add(this.roomName);
+                alert(this.roomName + ' is created');
                 $uibModalInstance.close(this.roomName);
             };
         
