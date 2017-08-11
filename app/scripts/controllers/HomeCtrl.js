@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, $uibModal) {
+    function HomeCtrl(Room, $uibModal, Message, roomId) {
         this.rooms = Room.all;
         this.open = function() {
             $uibModal.open({
@@ -9,11 +9,13 @@
               backdrop: 'static'
             });
         };
+        
+        this.getMessage = Message.getByRoomId(roomId);
     }
 
     //main controller
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', 'roomId', HomeCtrl]);
     
 })();

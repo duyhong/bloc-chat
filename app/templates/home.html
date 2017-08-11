@@ -2,8 +2,8 @@
     <nav class="navbar">
         <h1 class="reduced-font">Bloc Chat</h1>
         <button class="new-room-button" ng-click="home.open()">New room</button>
-        <div ng-repeat = "room in home.rooms track by $index">
-            {{room.$value}}
+        <div ng-repeat = "room in home.rooms track by $index" ng-click = "home.getMessage(room.$id)">
+            {{room.$id}} {{room.$value}}
         </div> 
     </nav>
 </div>
