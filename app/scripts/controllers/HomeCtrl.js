@@ -1,7 +1,7 @@
 (function() {
-    function HomeCtrl(Room, $scope, $uibModal) {
+    function HomeCtrl(Room, $uibModal) {
         this.rooms = Room.all;
-        $scope.open = function() {
+        this.open = function() {
             $uibModal.open({
               animation: true,
               templateUrl: '/templates/addRoom.html',
@@ -14,6 +14,6 @@
     //main controller
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', '$scope', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
     
 })();

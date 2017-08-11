@@ -6,7 +6,7 @@
     left: 0;
     top: 0;
     padding-left: 1rem;
-    width: 210px;  
+    width: 250px;  
     height: 100%;
 }
 
@@ -14,11 +14,14 @@ div {
     padding-bottom: 0.5rem;
 }
 
-h1 {
+h1.reduced-font {
+    font-size: 28px;
     display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
 }
 
 button {
-    margin: 0px 10px 10px 10px;
+    margin: -20px 10px 10px 20px;
     height: 30px;
 }
