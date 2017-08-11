@@ -1,6 +1,6 @@
 /*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 */
-.navbar {
+.sidebar {
     position: absolute;
     background-color: lightgrey;
     left: 0;
