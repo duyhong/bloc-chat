@@ -1,6 +1,6 @@
 /*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 */
-.navbar {
+.sidebar {
     position: absolute;
     background-color: lightgrey;
     left: 0;
@@ -8,6 +8,7 @@
     padding-left: 1rem;
     width: 250px;  
     height: 100%;
+    display: inline-block;
 }
 
 div {
@@ -24,4 +25,23 @@ h1.reduced-font {
 button {
     margin: -20px 10px 10px 20px;
     height: 30px;
+}
+
+.chat-window {
+    //display: inline-block;
+    float: right;
+    position: relative;
+    background-color: red;
+    height: 100%;
+    //width: 1000px;
+}
+
+.clearfix::before,
+.clearfix::after {
+   content: " ";
+   display: table;
+}
+
+.clearfix::after {
+   clear: both;
 }
