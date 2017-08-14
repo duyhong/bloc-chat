@@ -1,14 +1,19 @@
 /*.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 */
+/*.main {
+    display: flex;
+    float: left;
+} */
 .sidebar {
-    position: absolute;
+    //position: absolute;
     background-color: lightgrey;
     left: 0;
     top: 0;
     padding-left: 1rem;
     width: 250px;  
     height: 100%;
-    display: inline-block;
+    //display: inline-block;
+    float: left;
 }
 
 div {
@@ -28,14 +33,47 @@ button {
 }
 
 .chat-window {
+    //flex-grow: 100;
     //display: inline-block;
-    float: right;
-    position: relative;
-    background-color: red;
+    //float: right;
+    //position: relative;
+    //background-color: red;
     height: 100%;
-    //width: 1000px;
+    width: auto;
+    overflow: hidden;
 }
 
+.active-room-header {
+    //left: 20px;
+    padding: 20px;
+}
+
+.odd {
+    background-color: lemonchiffon;
+}
+.user-content {
+    width: 95%;
+    min-width: 120px; 
+    /*margin-bottom: 10px;*/
+    padding: 10px;
+    font-weight: bold;
+}
+
+#conversation {
+    font-weight: normal;
+}
+
+.timepoint {
+    width: 5%;
+    min-width: 80px; 
+    /*margin-bottom: 10px; */
+    padding: 10px;
+}
+
+/*.one-sentence {
+    padding: 20px;
+}
+/*
 .clearfix::before,
 .clearfix::after {
    content: " ";
@@ -44,4 +82,4 @@ button {
 
 .clearfix::after {
    clear: both;
-}
+} */

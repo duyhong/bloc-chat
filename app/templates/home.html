@@ -1,14 +1,29 @@
-<div ng-controller="HomeCtrl as home">
+<div class = "main" ng-controller="HomeCtrl as home">
     <nav class="sidebar">
         <h1 class="reduced-font">Bloc Chat</h1>
         <button class="new-room-button" ng-click="home.open()">New room</button>
-        <div ng-repeat = "room in home.rooms track by $index" ng-click = "home.getMessage(room.$id)">
-            {{room.$value}}
+        <div ng-repeat = "room in home.rooms track by $index" ng-click = "home.getMessages(room.$id, room.name)">
+            {{room.name}}
         </div> 
     </nav>
-    <div class = "chat-window" ng-repeat = "message in home.messages track by $index">
-        ABC
-        {{message}}
+    <div>
+        <div class="active-room-header">
+            {{home.activeRoom}}
+        </div>
+        <table class = "chat-window" ng-repeat = "message in home.messages track by $index" ng-class-odd="'odd'" ng-class-even="'even'">
+            <tr class="one-sentence">
+<!--                <span ng-class-odd="'odd'" ng-class-even="'even'"> -->
+                <td class="user-content">
+                    {{message.username}} <br>
+                    <p id="conversation">{{message.content}}</p>
+                </td>
+                <td class="timepoint">
+                    {{message.sentAt}}
+                </td>
+<!--                </span> -->
+            </tr>
+            
+        </table>
     </div>
-    
 </div>
+    

@@ -10,8 +10,11 @@
             });
         };
         
-        this.messages = Message.all;
-        this.getMessage = Message.getByRoomId;
+        this.getMessages = function (roomId, roomName) {
+            this.messages = Message.getByRoomId(roomId);
+            this.activeRoom = roomName;
+                //Room.getRoomName(roomId);
+        }
     }
 
     //main controller
