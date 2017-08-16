@@ -1,5 +1,5 @@
 (function() {
-    function HomeCtrl(Room, $uibModal, Message) {
+    function HomeCtrl(Room, $uibModal, Message, BlocChatCookies) {
         this.rooms = Room.all;
         this.open = function() {
             $uibModal.open({
@@ -20,6 +20,6 @@
     //main controller
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', 'BlocChatCookies', HomeCtrl]);
     
 })();
