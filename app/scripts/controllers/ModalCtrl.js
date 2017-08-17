@@ -14,8 +14,12 @@
             
             this.setUsername = function() {
                 // Setting username cookie
-                $cookies.put('blocChatCurrentUser', this.username);
-                $uibModalInstance.close(this.username);
+                console.log(this.username);
+                if (this.username !== '' && this.username !== ' ') {
+                    $cookies.put('blocChatCurrentUser', this.username);
+                    $uibModalInstance.close(this.username);
+                }
+                
             };
         
             this.cancel = function() {
