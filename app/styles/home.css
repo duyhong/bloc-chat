@@ -77,6 +77,10 @@ button {
     padding: 10px;
 }
 
+.setUser-box {
+    background-color: lightsteelblue;
+}
+
 /*.one-sentence {
     padding: 20px;
 }
