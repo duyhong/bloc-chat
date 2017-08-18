@@ -19,7 +19,7 @@
         this.submitMsg = function(typedMsg, activeRoom) {
             this.typedMsg = typedMsg;
             //this.activeRoom = activeRoom;
-            Message.send(typedMsg, activeRoom)();    
+            Message.send(typedMsg, activeRoom);    
         };
     }
 
