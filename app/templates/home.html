@@ -21,9 +21,23 @@
                     {{message.sentAt}}
                 </td>
 <!--                </span> -->
-            </tr>
-            
+            </tr>            
         </table>
+		<table>
+            <tr class="chat-box">
+                <form #f="ngForm" (ngSubmit)="home.submitMsg(home.typedMsg, home.activeRoom)">
+                    <td class="user-content" id="text-box">
+                            <input type="text" required [(ngModel)]="Message.typedMsg" placeholder="Write you message here..." name="name">
+                            TODO: remove this: {{home.typedMsg}}
+                    </td>
+                    <td class="timepoint" id="send-button">
+    <!--                    <span class="timepoint"> -->
+                            <button type="submit" class="send-button-entity" ng-click="home.submitMsg(home.typedMsg, home.activeRoom)">Send</button>
+    <!--                    </span> -->
+                    </td>
+                </form>
+            </tr>
+        </table>        
     </div>
 </div>
     
