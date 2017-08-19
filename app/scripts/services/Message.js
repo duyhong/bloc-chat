@@ -8,11 +8,11 @@
     
     //Message.all = messages;
       
-    Message.getByRoomId = function(roomId) {
-        console.log(roomId);
+    Message.getByRoomId = function(roomName) {
+        console.log(roomName);
         
         // Filter the messages by their room ID.
-        return $firebaseArray(ref.orderByChild('roomID').equalTo(roomId));
+        return $firebaseArray(ref.orderByChild('roomID').equalTo(roomName));
         
         //ref.orderByChild('roomID').equalTo(roomId).on('value', function(snapshot) {
         //    console.log(snapshot.val());

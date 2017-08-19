@@ -11,7 +11,7 @@
         };
         
         this.getMessages = function (roomId, roomName) {
-            this.messages = Message.getByRoomId(roomId);
+            this.messages = Message.getByRoomId(roomName);
             this.activeRoom = roomName;
                 //Room.getRoomName(roomId);
         };
