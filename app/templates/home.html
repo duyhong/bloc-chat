@@ -6,23 +6,26 @@
             {{room.name}}
         </div> 
     </nav>
-    <div>
+    <div id="right-pane">
         <div class="active-room-header">
             {{home.activeRoom}}
         </div>
-        <table class = "chat-window" ng-repeat = "message in home.messages track by $index" ng-class-odd="'odd'" ng-class-even="'even'">
-            <tr class="one-sentence">
-<!--                <span ng-class-odd="'odd'" ng-class-even="'even'"> -->
-                <td class="user-content">
-                    {{message.username}} <br>
-                    <p id="conversation">{{message.content}}</p>
-                </td>
-                <td class="timepoint">
-                    {{message.sentAt}}
-                </td>
-<!--                </span> -->
-            </tr>            
-        </table>
+        <div class = "chat-window">
+            <table ng-repeat = "message in home.messages track by $index" ng-class-odd="'odd'" ng-class-even="'even'">
+                <tr class="one-sentence">
+    <!--                <span ng-class-odd="'odd'" ng-class-even="'even'"> -->
+                    <td class="user-content">
+                        {{message.username}} <br>
+                        <p id="conversation">{{message.content}}</p>
+                    </td>
+                    <td class="timepoint">
+                        {{message.sentAt}}
+                    </td>
+    <!--                </span> -->
+                </tr>            
+            </table>
+        </div>
+        
 		<table>
             <tr class="chat-box">
                 <form #f="ngForm" (ngSubmit)="home.submitMsg(home.typedMsg, home.activeRoom)">

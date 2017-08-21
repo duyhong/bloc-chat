@@ -5,13 +5,13 @@
     float: left;
 } */
 
-html, 
-body, 
-.main {
+html, body, .main, nav {
     height: 100%;
+    width: 100%;
 }
 
 .sidebar {
+    position: fixed;
     //position: absolute;
     background-color: lightgrey;
     left: 0;
@@ -21,6 +21,18 @@ body,
     height: 100%;
     //display: inline-block;
     float: left;
+    //flex-direction: column;
+}
+
+#right-pane {
+    padding-left: 250px;
+    //position: relative;
+    //flow: right;
+    //width: auto;
+    //width: calc(CURRENT_SCREEN_WIDTH - 250px);
+    //display: inline-block;
+    //overflow-y: auto;
+    //flex-direction: column;
 }
 
 div {
@@ -45,15 +57,17 @@ button {
     //float: right;
     //position: relative;
     //background-color: red;
-    height: 100%;
-    width: auto;
-    overflow: hidden;
+    //height: 100%;
+    //width: auto;
+    //overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .active-room-header {
-    left: 20px;
+    //left: 10px;
     padding: 20px;
     width: auto;
+    font-weight: bold;
 }
 
 .odd {
@@ -105,10 +119,12 @@ input[type='submit'] {
 }
 */
 .chat-box {
-    padding: 0;
-    left: 0;
-    width: 100%;
-    
+    //padding: 0;
+    //left: 0;
+    //width: auto; 
+    //margin-top: 10px;
+    position: fixed;
+    bottom: 0;
 }
 
 #text-box, #send-button {
@@ -122,6 +138,15 @@ input[type='submit'] {
     color: white;
     font-weight: 600;
 }
+
+/*
+.page-wrap { 
+  width: 250px; 
+  margin: 15px auto; 
+  position: relative; 
+}
+
+
 /*.one-sentence {
     padding: 20px;
 }
