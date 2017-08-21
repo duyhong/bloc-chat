@@ -13,19 +13,19 @@
         this.getMessages = function (roomId, roomName) {
             this.messages = Message.getByRoomId(roomName);
             this.activeRoom = roomName;
-                //Room.getRoomName(roomId);
         };
         
         this.submitMsg = function(typedMsg, activeRoom) {
             this.typedMsg = typedMsg;
-            //this.activeRoom = activeRoom;
-            Message.send(typedMsg, activeRoom);    
+            
+            Message.send(typedMsg, activeRoom);  
+            this.typedMsg = null;
         };
     }
 
     //main controller
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', HomeCtrl]);
+        .controller('HomeCtrl', [ 'Room', '$uibModal', 'Message', HomeCtrl]);
     
 })();

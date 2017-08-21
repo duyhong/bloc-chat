@@ -28,9 +28,9 @@
         
 		<table>
             <tr class="chat-box">
-                <form #f="ngForm" (ngSubmit)="home.submitMsg(home.typedMsg, home.activeRoom)">
+                <form #f="ngForm" (ngSubmit)="home.submitMsg(home.typedMsg, home.activeRoom)" name="myForm">
                     <td class="user-content" id="text-box">
-                            <input type="text" required ng-model="home.typedMsg" placeholder="Write you message here..." name="name">
+                            <input type="text" required ng-model="home.typedMsg" placeholder="Write you message here..." name="myField" ng-keyup="$event.keyCode == 13 && home.submitMsg(home.typedMsg, home.activeRoom)">
  <!--                       TODO: remove this: {{home.typedMsg}} -->
                     </td>
                     <td class="timepoint" id="send-button">
