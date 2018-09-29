@@ -36,6 +36,10 @@ button {
     height: 30px;
 }
 
+.new-room-button {
+    vertical-align: text-bottom;
+}
+
 .chat-window {
     margin-bottom: 20px;
 }
