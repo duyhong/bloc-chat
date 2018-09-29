@@ -3,16 +3,16 @@
 An application that sends and receives messages in real time using AngularJS and Firebase.
 
 Add a username:
-![Screenshot of adding username](/app/assets/username.PNG)
+![Screenshot of adding username](/app/assets/images/username.PNG)
 
 Add a room:
-![Screenshot of adding a room](/app/assets/addRoom.png)
+![Screenshot of adding a room](/app/assets/images/addRoom.png)
 
 Chat in a room:
-![Screenshot of a chat room](/app/assets/imagesblocchat.png)
+![Screenshot of a chat room](/app/assets/images/blocchat.png)
 
 Rooms and messages created in Firebase database:
-![Screenshot of a chat room](/app/assets/Firebase DB.PNG)
+![Screenshot of a chat room](/app/assets/images/Firebase DB.PNG)
 
 ## Pull Down the Code
 
